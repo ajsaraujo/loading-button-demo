@@ -1,0 +1,3 @@
+<button *ngIf="{ isLoading: isLoading$ | async } as state">
+  {{ state.isLoading ? "Loading..." : label }}
+</button>
