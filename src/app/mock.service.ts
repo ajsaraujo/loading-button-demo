@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class MockService {
-  private endpoint = 'https://mymock.free.beeceptor.com';
+  private endpoint = 'https://loading-button-demo.free.beeceptor.com';
 
   constructor(private http: HttpClient) {}
 
