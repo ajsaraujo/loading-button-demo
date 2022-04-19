@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { forkJoin } from 'rxjs';
 import { MockService } from './mock.service';
 
 @Component({
@@ -17,5 +18,9 @@ export class AppComponent {
 
   getB() {
     this.service.getB().subscribe();
+  }
+
+  getBoth() {
+    forkJoin(this.service.getA(), this.service.getB()).subscribe();
   }
 }

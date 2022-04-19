@@ -10,4 +10,10 @@
     label="Button B"
     endpoint="/b"
   ></app-loading-button>
+
+  <app-loading-button
+    (click)="getBoth()"
+    label="Button C"
+    [endpoints]="['/a', '/b']"
+  ></app-loading-button>
 </div>
